@@ -1,38 +1,64 @@
-# Stardew Access I18N Template
+# Stardew Access - Bản dịch Tiếng Việt
 
-This is a template for the translation mods for the [Stardew Access](https://www.nexusmods.com/stardewvalley/mods/16205) mod.
-The mod depends on [Project Fluent](https://www.nexusmods.com/stardewvalley/mods/12638) for the translations and as such, you will need to install that too alongside Stardew Access.
+Đây là gói ngôn ngữ Tiếng Việt cho mod [Stardew Access](https://www.nexusmods.com/stardewvalley/mods/12638).
 
-The translation mod has two parts, the first one is the fluent content pack which contains all the translations for the mod so this is the most important part.
-The second optional part is a C# mod that is supposed to contain the logic for advanced pluralization of item names for your language.
-You can have basic pluralization setup with just fluent but that gets complicated for certain languages in which pluralization depends on certain conditions like the type of object (plural of `wood` is `pieces of wood` while plural of `pen` is `pens`).
+**Lưu ý quan trọng:** Gói dịch này được thiết kế để Việt hóa các tính năng của Stardew Access **khi bạn đang sử dụng bản Việt hóa Stardew Valley của nhóm ILoveFish**. Nó không hoạt động với game gốc tiếng Anh.
 
-*Note that currently the C# part of the mod has not yet been included in this template repository.*
+Mục tiêu của dự án là giúp người chơi mù có thể trải nghiệm một thế giới Stardew Valley hoàn toàn bằng Tiếng Việt.
 
-## Why Project Fluent?
+## Yêu Cầu Bắt Buộc
 
-1. Allowed splitting of translation file into multiple sub-translation files (stardew access has a total of 6 translation files).
-2. Support for locale variants (differentiating between en-US and en-GB, but also providing a default en variant).
-3. Ability to use conditions in a translation entry allowing merging of multiple entries into one.
-4. Custom functions inside translation entries that extend functionality.
+Để sử dụng bản dịch này, bạn **BẮT BUỘC** phải cài đặt tất cả các mod sau đây trước. Nếu thiếu bất kỳ mod nào, game có thể sẽ không hoạt động đúng.
 
-## Fluent Content Pack Setup
+1.  **SMAPI - Trình tải mod**
+    * Tải tại: [https://smapi.io/](https://smapi.io/)
 
-1. Rename the folder `[Fluent][EN] Stardew Access` and replace `EN` with the appropriate language code.
-2. Change the `Name`, `Author`, `Description`, and `UniqueID` values to describe your mod. (Don’t change the `UniqueID` under `ContentPackFor` and `Dependencies`!)
-   - The `Name` field's value should ideally be the same as the folder's name you just changed to and as such, you'll only need to replace `EN` with your language code.
-   - Follow this format for the UniqueID: `<YourName>.
-   Fluent.StardewAccess.<language-code>`
-     - An example of a United States English translation mod would be `Shoaib.Fluent.StardewAccess.en-us`
-3. Create a folder named `i18n` inside this folder. This will contain all the translation `.ftl` files.
-4. Now copy the `.ftl` files from the `i18n` folder of the mod's beta or release version of the mod and rename them with your language code.
-5. That's it! Now you can translate these files.
+2.  **Stardew Valley - Vietnamese (của ILoveFish)**
+    * Đây là bản dịch nền cho toàn bộ trò chơi.
+    * Tải tại: [https://www.nexusmods.com/stardewvalley/mods/24371](https://www.nexusmods.com/stardewvalley/mods/24371)
 
-You can find syntax guide for fluent [here](https://projectfluent.org/fluent/guide/).
-There's also a [playground](https://projectfluent.org/play/) where you can test things if you want to.
-You might also need to look into the custom functions added by [Project Fluent mod](https://hackmd.io/@Shockah/H1q8H-mcc/https%3A%2F%2Fhackmd.io%2F%40Shockah%2FHy8nTM7c5) and [Stardew Access](https://github.com/stardew-access/stardew-access/blob/c966d188ea506a70782edb5177ef6e87c685f890/stardew-access/Translation/CustomFluentFunctions.cs#L29-L91)
+3.  **Stardew Access - Mod hỗ trợ chính**
+    * Tải tại Nexus: [https://www.nexusmods.com/stardewvalley/mods/12638](https://www.nexusmods.com/stardewvalley/mods/12638)
+    * Hoặc GitHub: [https://github.com/stardew-access/stardew-access/](https://github.com/stardew-access/stardew-access/)
 
-<TODO Add the doc link for custom functions in stardew access.>
+4.  **Content Patcher**
+    * Cần thiết để mod Việt hóa game hoạt động.
+    * Tải tại: [https://www.nexusmods.com/stardewvalley/mods/1915](https://www.nexusmods.com/stardewvalley/mods/1915)
 
-Because this is a content pack, it loads just like any other mod. So once you're done translating or want to test your translations, copy or move the `[Fluent][EN] Stardew Access` over to the `Mods` folder.
-It is recommended that you also host this content pack on Nexus (if possible otherwise github or some other platform is fine) so that we can mention your translation mod on Stardew Access' mod pages.
+5.  **Generic Mod Config Menu**
+    * Được yêu cầu bởi bản dịch Stardew Valley - Vietnamese.
+    * Tải tại: [https://www.nexusmods.com/stardewvalley/mods/5098](https://www.nexusmods.com/stardewvalley/mods/5098)
+
+6.  **Project Fluent**
+    * Thư viện ngôn ngữ mà Stardew Access yêu cầu.
+    * Tải tại: [https://www.nexusmods.com/stardewvalley/mods/16334](https://www.nexusmods.com/stardewvalley/mods/16334)
+
+## Hướng Dẫn Cài Đặt và Kích Hoạt
+
+1.  **Cài đặt các yêu cầu:** Đảm bảo bạn đã cài đặt TẤT CẢ 6 mod trong phần Yêu Cầu Bắt Buộc ở trên.
+2.  **Tải gói dịch:**
+    * Tại trang GitHub này, tìm đến phần **Releases**.
+    * Nhấn vào bản phát hành mới nhất (thường có nhãn "Latest").
+    * Trong phần **Assets** của bản phát hành đó, tìm và tải về tệp tin có đuôi `.zip`.
+3.  **Giải nén:** Giải nén tệp `.zip` bạn vừa tải về.
+4.  **Sao chép:** Bên trong thư mục vừa giải nén, bạn sẽ thấy một thư mục có tên là `[Fluent][VI] Stardew Access`. Hãy sao chép toàn bộ thư mục này.
+5.  **Dán vào thư mục Mods:** Mở thư mục cài đặt game Stardew Valley của bạn, tìm đến thư mục `Mods` và dán thư mục bạn vừa sao chép vào đó.
+6.  **Kích hoạt ngôn ngữ (Quan trọng):**
+    * Khởi động game qua SMAPI.
+    * Tại màn hình chính, chọn mục **Language** (Ngôn ngữ).
+    * Nhấn nút **Next page** (Trang sau) cho đến khi bạn thấy tùy chọn **"ModLanguage_ILoveFish.VietnameseTranslation"**.
+    * Chọn vào ngôn ngữ đó. Bản dịch cho Stardew Access sẽ tự động được áp dụng cùng lúc.
+
+## Góp ý và Báo lỗi
+
+Đây là phiên bản đầu tiên của bản dịch. Có thể vẫn còn một số lỗi hoặc các câu dịch chưa được tự nhiên. Rất mong nhận được sự góp ý của cộng đồng để hoàn thiện hơn.
+
+Mọi phản hồi xin vui lòng:
+* Tạo một **"Issue"** (Vấn đề) trên trang GitHub này.
+* Hoặc gửi email trực tiếp đến địa chỉ: **trung@ddt.one**
+
+## Ghi công (Credits)
+
+* Cảm ơn **shoaib và đội ngũ phát triển Stardew Access** đã tạo ra một mod tuyệt vời và đầy ý nghĩa.
+* Trân trọng cảm ơn nhóm **ILoveFish Vietnamese Translation** và các cộng tác viên đã dành vô vàn tâm huyết để Việt hóa toàn bộ trò chơi, tạo ra nền tảng không thể thiếu cho dự án này.
+* Bản dịch Stardew Access được thực hiện bởi **Đào Đức Trung**.
