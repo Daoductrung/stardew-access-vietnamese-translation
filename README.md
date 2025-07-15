@@ -36,10 +36,7 @@ Mục tiêu của dự án là giúp người chơi mù có thể trải nghiệ
 ## Hướng Dẫn Cài Đặt và Kích Hoạt
 
 1.  **Cài đặt các yêu cầu:** Đảm bảo bạn đã cài đặt TẤT CẢ 6 mod trong phần Yêu Cầu Bắt Buộc ở trên.
-2.  **Tải gói dịch:**
-    * Tại trang GitHub này, tìm đến phần **Releases**.
-    * Nhấn vào bản phát hành mới nhất (thường có nhãn "Latest").
-    * Trong phần **Assets** của bản phát hành đó, tìm và tải về tệp tin có đuôi `.zip`.
+2.  **Tải gói dịch.
 3.  **Giải nén:** Giải nén tệp `.zip` bạn vừa tải về.
 4.  **Sao chép:** Bên trong thư mục vừa giải nén, bạn sẽ thấy một thư mục có tên là `[Fluent][VI] Stardew Access`. Hãy sao chép toàn bộ thư mục này.
 5.  **Dán vào thư mục Mods:** Mở thư mục cài đặt game Stardew Valley của bạn, tìm đến thư mục `Mods` và dán thư mục bạn vừa sao chép vào đó.
