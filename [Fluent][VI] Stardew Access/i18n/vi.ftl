@@ -61,8 +61,8 @@ feature-read_tile-tile_indexes = Các chỉ số ô:
 
 feature-speak_selected_slot_item_name = Đã chọn {$slot_item_name}
 feature-speak_location_name = Đã vào {$location_name}
-feature-speak_health_n_stamina-in_percentage_format = Máu {$health}% và Thể lực {$stamina}%
-feature-speak_health_n_stamina-in_normal_format = Máu {$health} và Thể lực {$stamina}
+feature-speak_health_n_stamina-in_percentage_format = Máu {$health}% và Năng lượng {$stamina}%
+feature-speak_health_n_stamina-in_normal_format = Máu {$health} và Năng lượng {$stamina}
 feature-speak_money = Bạn có {$money}g
 feature-speak_time_and_season = Bây giờ là {$time_of_day}, {$day ->
     [Monday] Thứ Hai
@@ -80,7 +80,7 @@ feature-speak_position = {$verbose_coordinates ->
 feature-speak_youve_got_mail = Bạn có thư mới!
 feature-speak_cheater = Bạn là một kẻ gian lận!
 feature-warnings-health = Cảnh báo! Máu của bạn còn {$value} phần trăm!
-feature-warnings-stamina = Cảnh báo! Thể lực của bạn còn {$value} phần trăm!
+feature-warnings-stamina = Cảnh báo! Năng lượng của bạn còn {$value} phần trăm!
 feature-warnings-time = Cảnh báo! Bây giờ là {$value}
 feature-grid_movement_status = Di chuyển theo lưới: {$is_active ->
     [0] đang tắt
@@ -291,7 +291,7 @@ item-quality_type = Chất lượng {$quality_index ->
     *[4] Iridium
   }
 item-stamina_and_health_recovery_on_consumption = {SIGNOFNUMBER($stamina_amount) ->
-    [positive] +{$stamina_amount} Thể lực và {SIGNOFNUMBER($health_amount) ->
+    [positive] +{$stamina_amount} Năng lượng và {SIGNOFNUMBER($health_amount) ->
         [positive] +{$health_amount} Máu
         *[other] {EMPTYSTRING()}
       }
