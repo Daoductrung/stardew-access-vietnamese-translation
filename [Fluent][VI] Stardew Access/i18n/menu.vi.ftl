@@ -298,7 +298,7 @@ menu-forge-gemstone_input_slot = {$is_empty ->
 
 ### Geode Menu
 
-menu-geode-geode_input_slot = Đặt địa chất vào đây
+menu-geode-geode_input_slot = Đặt Hốc tinh vào đây
 menu-geode-received_treasure_info = Đã nhận được {$treasure_name}
 
 ### Item Grab Menu

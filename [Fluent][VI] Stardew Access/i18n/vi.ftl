@@ -371,7 +371,7 @@ monster_name-dangerous = {$monster_name} nguy hiểm
 monster_name-flying_purple_shorts = Quần đùi tím bay
 monster_name-mage = Pháp sư {$monster_name}
 monster_name-mutant = {$monster_name} đột biến
-monster_name-slime = Slime{$is_cute ->
+monster_name-slime = Slime {$is_cute ->
     [0] {EMPTYSTRING()}
     *[1] dễ thương
   }
