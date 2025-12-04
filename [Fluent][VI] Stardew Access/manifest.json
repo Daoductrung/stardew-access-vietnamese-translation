@@ -1,7 +1,7 @@
 {
   "Name": "[Fluent][VI] Stardew Access",
   "Author": "Daoductrung",
-  "Version": "2.2",
+  "Version": "2.3",
   "Description": "Gói Tiếng Việt cho mod Stardew Access",
   "UniqueID": "daoductrung.fluent.stardewaccess.vi",
   "UpdateKeys": [
@@ -14,10 +14,10 @@
   "Dependencies": [
     {
       "UniqueID": "shoaib.stardewaccess",
-      "MinimumVersion": "1.6.1"
+      "MinimumVersion": "1.6.2"
     },
     {
-      "UniqueID": "ILoveFish.VietnameseTranslation"
+      "UniqueID": "Kou.ViethoaSV"
     }
   ]
 }
